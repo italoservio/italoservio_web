@@ -19,13 +19,13 @@ export function LinkedIn() {
               LinkedIn
             </S.Button>
           </Col>
-          <Col md={4}>
+          <S.ImageCol md={4}>
             <img
               height={'250'}
               src={DeveloperActivity}
               alt={'Developer Activity'}
             />
-          </Col>
+          </S.ImageCol>
         </Row>
       </Container>
     </S.LinkedInContainer>

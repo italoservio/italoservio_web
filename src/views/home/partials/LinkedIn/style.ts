@@ -1,4 +1,6 @@
-import styled from "styled-components";
+import { Col } from 'react-grid-system';
+import styled from 'styled-components';
+import { EnumBreakpoints } from '../../../../shared/enum/breakpoint';
 
 export const LinkedInContainer = styled.div`
   padding: 3rem 0;
@@ -8,7 +10,18 @@ export const LinkedInContainer = styled.div`
     font-size: 35px;
     color: ${props => props.theme.text.contrast};
   }
-`
+`;
+
+export const ImageCol = styled(Col)`
+  @media (max-width: ${EnumBreakpoints.MD}) {
+    display: flex;
+    justify-content: center;
+
+    img {
+      padding-top: 2.5rem;
+    }
+  }
+`;
 
 export const Button = styled.button`
   height: 50px;
