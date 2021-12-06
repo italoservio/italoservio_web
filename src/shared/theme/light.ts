@@ -6,5 +6,6 @@ export const light = {
   text: {
     title: '#000',
     subtitle: '#000',
+    contrast: '#fff',
   },
 };

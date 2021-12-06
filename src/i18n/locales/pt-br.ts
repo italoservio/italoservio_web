@@ -5,7 +5,11 @@ const ptBr = {
       subtitle: `Bem-vindo! Aqui você verá um
         resumo sobre mim e minha 
         jornada profissional.
-      `
+      `,
+      linkedInCTA: `Saiba mais sobre mim 
+        enquanto esta página 
+        está sendo desenvolvida:
+      `,
     },
   },
 };
