@@ -6,5 +6,6 @@ export const night = {
   text: {
     title: '#fff',
     subtitle: '#acacac',
+    contrast: '#fff',
   },
 };
