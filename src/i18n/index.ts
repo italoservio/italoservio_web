@@ -4,11 +4,13 @@ import { initReactI18next } from 'react-i18next';
 
 import ptBr from './locales/pt-br';
 import enUs from './locales/en-us';
+import esEs from './locales/es-es';
 import { EnumI18n } from '../shared/enum/i18n';
 
 const locales = {
   [EnumI18n.PT_BR]: ptBr,
   [EnumI18n.EN_US]: enUs,
+  [EnumI18n.ES_ES]: esEs,
 };
 
 const i18nConfig = {

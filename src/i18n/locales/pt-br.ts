@@ -1,7 +1,13 @@
-export default {
+const ptBr = {
   translations: {
     home: {
-      message: 'Olá Mundo!',
+      title: 'Ítalo Sérvio\'s',
+      subtitle: `Bem-vindo! Aqui você verá um
+        resumo sobre mim e minha 
+        jornada profissional.
+      `
     },
   },
 };
+
+export default ptBr;

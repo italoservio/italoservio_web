@@ -1,15 +1,12 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { GlobalStyle } from './shared/theme';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
 import { AppContext } from './contexts/app';
-import { Home } from './views';
 import { EnumTheme } from './shared/enum/theme';
-import { light, night } from './shared/theme';
+import { GlobalStyle, light, night } from './shared/theme';
+import { Home } from './views';
 
-const pubs = [
-  { path: '/', element: <Home /> }
-];
+const pubs = [{ path: '/', element: <Home /> }];
 
 export function App() {
   const { theme } = React.useContext(AppContext);
@@ -20,7 +17,9 @@ export function App() {
       <ThemeProvider theme={theme === EnumTheme.LIGHT ? light : night}>
         <BrowserRouter>
           <Routes>
-            {pubs.map(route => <Route {...route} />)}
+            {pubs.map((route, i) => (
+              <Route key={i} {...route} />
+            ))}
           </Routes>
         </BrowserRouter>
       </ThemeProvider>
