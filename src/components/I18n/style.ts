@@ -1,13 +1,17 @@
 import styled from 'styled-components';
+import { EnumBreakpoints } from '../../shared/enum/breakpoint';
 
 export const BrandsContainer = styled.div`
   h4 {
     font-size: 20px;
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
+    color: ${props => props.theme.text.title};
   }
 
-
-`
+  @media (max-width: ${EnumBreakpoints.MD}) {
+    padding-top: 2.5rem;
+  }
+`;
 
 export const BrandButton = styled.button`
   background-color: transparent;
@@ -22,7 +26,7 @@ export const BrandButton = styled.button`
 
   :not(:disabled) {
     img {
-      filter: opacity(.25);
+      filter: opacity(0.25);
     }
   }
-`
+`;

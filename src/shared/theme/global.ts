@@ -1,8 +1,7 @@
 import { createGlobalStyle } from 'styled-components';
-import DMSerifText from '../../assets/fonts/DMSerifText.ttf'
+import DMSerifText from '../../assets/fonts/DMSerifText.ttf';
 
 export const GlobalStyle = createGlobalStyle`
-
   @font-face {
     font-family: 'DM Serif Text';
     src: url(${DMSerifText});
