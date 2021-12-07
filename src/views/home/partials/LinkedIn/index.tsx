@@ -15,7 +15,9 @@ export function LinkedIn() {
         <Row>
           <Col md={8}>
             <h2>{t('home.linkedInCTA')}</h2>
-            <S.Button>
+            <S.Button onClick={() => {
+              window.location.href = "https://www.linkedin.com/in/italoservio/";
+            }}>
               LinkedIn
             </S.Button>
           </Col>
