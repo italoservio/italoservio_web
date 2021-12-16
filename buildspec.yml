@@ -17,8 +17,7 @@ phases:
   post_build:
       commands:
         - echo Build completed on `date`
-        
+
 artifacts:
-  base-directory: build
   files:
-    - '**/*'
+    - 'build/**/*'
