@@ -18,7 +18,7 @@ export function LinkedIn() {
             <S.Button onClick={() => {
               window.location.href = "https://www.linkedin.com/in/italoservio/";
             }}>
-              LinkedIn
+              My LinkedIn
             </S.Button>
           </Col>
           <S.ImageCol md={4}>
