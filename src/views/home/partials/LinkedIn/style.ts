@@ -25,7 +25,7 @@ export const ImageCol = styled(Col)`
 
 export const Button = styled.button`
   height: 50px;
-  width: 150px;
+  padding: 0 1.5rem;
 
   transition: all 200ms;
 
